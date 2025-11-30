@@ -4,7 +4,7 @@ bugswarmapi = DatabaseAPI(token='ECS245-TOKEN')
 
 api_filter = json.dumps({
     "lang": "Java",
-    "classification.exceptions": "UnsatisfiedDependencyException",
+    "classification.exceptions": "ArrayIndexOutOfBoundsException",
     "status": "active",
     "reproducibility_status.status": "Reproducible"
 })
@@ -18,4 +18,5 @@ print(image_tags)
 # with open("/bugswarm-sandbox/artifact_list.txt", "w", encoding="utf-8") as f:
 #     for tag in image_tags:
 #         f.write(tag + "\n")
+
 
